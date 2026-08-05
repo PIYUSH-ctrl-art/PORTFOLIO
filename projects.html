@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT | PIYUSH DAS</title>
+    <style>
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* Main Card */
+
+h1{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:20px;
+    padding:45px 60px;
+    color:#00d4ff;
+    font-size:42px;
+    font-weight:700;
+    text-align:center;
+    letter-spacing:2px;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+    transition:.4s ease;
+}
+
+/* Hover Effect */
+
+h1:hover{
+    transform:translateY(-8px);
+    border-color:#00d4ff;
+    box-shadow:0 20px 50px rgba(0,212,255,.30);
+}
+
+/* Underline */
+
+h1::after{
+    content:"";
+    display:block;
+    width:160px;
+    height:4px;
+    background:#00d4ff;
+    margin:18px auto 0;
+    border-radius:10px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    h1{
+        font-size:30px;
+        padding:35px 25px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    h1{
+        font-size:24px;
+        padding:30px 20px;
+        letter-spacing:1px;
+    }
+
+}
+</style>
+</head>
+<body>
+    <div class="coming-soon">
+        <h1>Projects Coming Soon</h1>
+        
+    </div>
+    
+</body>
+</html>

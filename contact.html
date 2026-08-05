@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT | PIYUSH DAS</title>
+    <style>
+      /* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:40px 20px;
+    color:white;
+}
+
+/* Contact Card */
+
+body::before{
+    content:"";
+    position:absolute;
+    width:90%;
+    max-width:850px;
+    height:auto;
+    min-height:520px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+    z-index:-1;
+}
+
+/* Heading */
+
+h1{
+    font-size:42px;
+    color:#00d4ff;
+    margin-bottom:35px;
+    text-align:center;
+    letter-spacing:2px;
+}
+
+h1::after{
+    content:"";
+    display:block;
+    width:140px;
+    height:4px;
+    background:#00d4ff;
+    margin:12px auto 0;
+    border-radius:10px;
+}
+
+/* Contact Details */
+
+h3{
+    width:90%;
+    max-width:750px;
+    background:rgba(255,255,255,.05);
+    border-left:5px solid #00d4ff;
+    padding:18px 22px;
+    margin:12px 0;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:500;
+    transition:.35s ease;
+    word-break:break-word;
+}
+
+h3:hover{
+    transform:translateX(8px);
+    background:rgba(0,212,255,.12);
+    box-shadow:0 8px 20px rgba(0,212,255,.25);
+}
+
+/* Links */
+
+a{
+    color:#00d4ff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+a:hover{
+    color:#ffffff;
+    text-decoration:underline;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00d4ff;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#0099cc;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    body{
+        padding:25px 15px;
+    }
+
+    body::before{
+        width:95%;
+    }
+
+    h1{
+        font-size:32px;
+    }
+
+    h3{
+        font-size:16px;
+        padding:15px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    h1{
+        font-size:26px;
+    }
+
+    h3{
+        font-size:15px;
+    }
+
+}
+    </style>
+
+</head>
+
+<body>
+    <!-- <h1>CONTACT | PIYUSH DAS
+    </h1>
+    <h3>GMAIL : edutech.piyush@gmail.com</h3>
+    <h3>PHONE : +91 7488455933</h3>
+    <h3>LOCATION : BINODPUR, KATIHAR, BIHAR - 854105</h3>
+    <h3>LINKEDIN : <a href="https://www.linkedin.com/in/piyush-das-educationtec15"
+            target="_blank">www.linkedin.com/in/piyush-das-educationtec15/</a></h3>
+    <h3>GITHUB : <a href="https://github.com/PIYUSH-ctrl-art"
+            target="_blank">www.github.com/PIYUSH-ctrl-art/</a></h3>
+    <h3>RESUME : <a href="https://drive.google.com/file/d/1GYyPaEB0J6c02fHgwnnFESm7CYNif84s/view?usp=drive_link"
+            target="_blank">DOWNLOAD 📩</a></h3> -->
+<section class="contact-card">
+    <h1>CONTACT | PIYUSH DAS</h1>
+
+    <p><strong>📧 Gmail:</strong> edutech.piyush@gmail.com</p>
+    <p><strong>📞 Phone:</strong> +91 7488455933</p>
+    <p><strong>📍 Location:</strong> Binodpur, Katihar, Bihar - 854105</p>
+    <p><strong>💼 LinkedIn:</strong> <a href="https://www.linkedin.com/in/piyush-das-educationtec15" target="_blank">View Profile</a></p>
+    <p><strong>💻 GitHub:</strong> <a href="https://github.com/PIYUSH-ctrl-art" target="_blank">View Profile</a></p>
+    <p><strong>📄 Resume:</strong> <a href="https://drive.google.com/file/d/1GYyPaEB0J6c02fHgwnnFESm7CYNif84s/view?usp=drive_link">Download Resume</a></p>
+</section>
+</body>
+
+</html>
