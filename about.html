@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT | PIYUSH</title>
+    <style>
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:#fff;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+/* Heading */
+
+header{
+    text-align:center;
+    font-size:45px;
+    font-weight:700;
+    color:#00d4ff;
+    letter-spacing:3px;
+    margin-bottom:15px;
+}
+
+header::after{
+    content:"";
+    display:block;
+    width:130px;
+    height:4px;
+    background:#00d4ff;
+    margin:12px auto;
+    border-radius:10px;
+}
+
+/* Profile Image */
+
+.profile-img{
+    display:block;
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    margin:25px auto;
+    border:5px solid #00d4ff;
+    box-shadow:0 15px 35px rgba(0,212,255,.35);
+    transition:.4s;
+}
+
+.profile-img:hover{
+    transform:scale(1.08) rotate(2deg);
+    box-shadow:0 20px 45px rgba(0,212,255,.55);
+}
+
+/* Main Container */
+
+main{
+    max-width:1000px;
+    margin:auto;
+}
+
+/* Cards */
+
+section,
+main>p{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:18px;
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+    transition:.35s;
+}
+
+section:hover,
+main>p:hover{
+    transform:translateY(-8px);
+    border-color:#00d4ff;
+    box-shadow:0 20px 40px rgba(0,212,255,.25);
+}
+
+/* Section Heading */
+
+h2{
+    color:#00d4ff;
+    font-size:28px;
+    margin-bottom:20px;
+    border-left:5px solid #00d4ff;
+    padding-left:15px;
+}
+
+/* Sub Heading */
+
+h3{
+    color:#ffffff;
+    margin:15px 0 10px;
+    font-weight:600;
+}
+
+/* Paragraph */
+
+p{
+    font-size:17px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* Lists */
+
+ul{
+    margin-left:25px;
+}
+
+li{
+    margin-bottom:12px;
+    line-height:1.7;
+}
+
+/* Underline */
+
+u{
+    color:#00d4ff;
+    text-decoration-color:#00d4ff;
+}
+
+/* Career Objective */
+
+section:nth-last-child(4) ul{
+    list-style:none;
+    margin-left:0;
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* Future Goal */
+
+section:last-of-type{
+    margin-bottom:0;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00d4ff;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#00aacc;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    header{
+        font-size:35px;
+    }
+
+    .profile-img{
+        width:170px;
+        height:170px;
+    }
+
+    section,
+    main>p{
+        padding:22px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    p,
+    li{
+        font-size:15px;
+    }
+}
+
+@media(max-width:480px){
+
+    header{
+        font-size:28px;
+    }
+
+    .profile-img{
+        width:150px;
+        height:150px;
+    }
+
+    section,
+    main>p{
+        padding:18px;
+    }
+
+    h2{
+        font-size:20px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        About Me
+    </header>
+    <img src="me.jpeg" alt="Piyush Das" class="profile-img">
+    <!-- <img src="images\me.jpeg" alt="Piyush Das" -->
+        <!-- style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 20px;"> -->
+    <main>
+        <h2>PROFILE SUMMARY </h2>
+        <p> Hello! I'm Piyush Das, a second-year undergraduate pursuing a Bachelor of Computer Applications (BCA)
+            and a Bachelor of Arts in English Honours. I am passionate about technology, education, and continuous
+            learning. Alongside my studies, I teach students from Classes 1 to 8, which has strengthened my
+            communication,
+            leadership, and problem-solving skills. I enjoy building my technical knowledge through programming and web
+            development while also improving my teaching abilities. My goal is to grow as a software professional,
+            create
+            meaningful digital solutions, and make a positive impact through both technology and education. I believe
+            consistency, curiosity, and dedication are the keys to long-term success.</p>
+
+        <section>
+            <h2>ACADEMIC CREDENTIALS</h2>
+            <ul>
+                <li>GRADUATION (Currently Pursuing) <br>(2025-2028)<br><br></li>
+                BCA (BACHELOR OF COMPUTER APPLICATION) <br>
+                FROM : AMITY UNIVERSITY, NOIDA <br><br></li>
+                <li>Also, GRADUATION (Currently Pursuing)<br>
+                    (2026-2030) <br><br>
+                    BA ENGLISH HONS. (BACHELOR OF ENGLISH HONOURS)<br>
+                    FROM :
+                    S.R.C. COLLEGE, KATIHAR <br><br>
+                <li>CLASS - XII <br><br>
+                    STREAM : SCIENCE (PHYSICS, CHEMISTRY, MATHEMATICS) <br>
+                    FROM : SCOTTISH PUBLIC
+                    SCHOOL, KATIHAR, BIHAR <br>
+                     PERCENTAGE OBTAINED : 65%<br><br>
+                    PASSING YEAR : 2025 <br><br>
+                <li> CLASS – X <br><br>
+                    FROM : RAMAKRISHNA MISSION VIDYA MANDIR, KATIHAR, BIHAR <br>
+                    PERCENTAGE OBTAINED : 75%<br>
+
+                    PASSING YEAR : 2023
+        </section>
+        <section>
+            <h2>S K I L L S </h2>
+            <ul>
+                <li>Communication Centered</li>
+                <li>Teaching Skills</li>
+                <li>Subject Knowledge (Mathematics, English, Science)</li>
+                <li>Time Management</li>
+                <li>Creative Teaching Methods</li>
+                <li>Basic Computer Skills - Microsoft Word, Microsoft Excel, Microsoft PowerPoint</li>
+            </ul>
+        </section>
+        <section>
+            <h2>C E R T I F I C A T I O N S </h2>
+            <ul>
+                <li>Basics of Artificial Intelligence and Machine Learning (AI/ML)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>WORK E X P E R I E N C E </h2>
+            <h3>Jan'2025 - Till Date </h3>
+            <ul>
+                <p>Private Tutor (Classes 1–8) Teach students from Classes 1 to 8 in Mathematics, Science, English, and
+                    other
+                    core subjects. Prepare lesson plans, assignments, and practice worksheets. Help students improve
+                    their
+                    academic performance and exam preparation. Create an engaging and supportive learning environment.
+                    Communicate
+                    regularly with parents regarding students' progress.</p>
+            </ul>
+            <h3>July'2026-August'2026</h3>
+            <ul>
+                <p>Accounts & Tax Assistant (CA Firm) (SGPA & associates) Assisted in preparing and maintaining
+                    financial
+                    records and documents. Supported the team with basic Accounting, Cibil, GST, and Income tax-related tasks.
+                    Organized
+                    client files and maintained proper documentation. Worked with spreadsheets and office software for
+                    data entry
+                    and record management. Learned and followed professional office procedures while working under the
+                    guidance
+                    of Chartered Accountants </p>
+            </ul>
+        </section>
+        <section>
+            <h2>CAREER O B J E C T I V E</h2>
+            <ul>
+                As a student pursuing both BCA and BA English Honours, my objective is to combine technical expertise
+                with strong communication skills. I aspire to build a career in software development while also
+                contributing to education through teaching, mentoring, and lifelong learning.
+            </ul>
+        </section>
+        <section>
+            <h2>S T R E N G T H</h2>
+            <ul>
+                <li>Quick Learner</li>
+                <li>Responsible and Disciplined</li>
+                <li>Strong Communication Skills</li>
+                <li>Problem-Solving Mindset</li>
+                <li>Adaptable to New Technologies</li>
+                <li>Passionate About Teaching and Learning</li>
+            </ul>
+        </section>
+        <section>
+            <h2>I N T E R E S T</h2>
+            <ul>
+                <li>Programming and Web Development</li>
+                <li>Educational Technology</li>
+                <li>Artificial Intelligence</li>
+                <li>Teaching and Mentoring Students</li>
+                <li>Reading and Improving English Communication</li>
+                <li>Continuous Learning and Skill Development</li>
+            </ul>
+        </section>
+        <section>
+            <h2>FUTURE G O A L S</h2>
+            <p>My goal is to build a successful career in the technology industry while continuously expanding my
+                knowledge and skills. I aspire to become a skilled software developer, contribute to meaningful
+                projects, and use my teaching experience to help others learn. I also aim to achieve financial
+                independence, support my family, and continue growing both personally and professionally.</p>
+        </section>
+        <section>
+            <h2>L A N G U A G E</h2>
+            <ul>
+                <li>English</li>
+                <li>Hindi</li>
+                <li>Bengali</li>
+            </ul>
+        </section>
+        <section>
+            <h2>C O N T A C T</h2>
+            <ul>
+                <li>Email: edutech.piyush@gmail.com</li>
+                <li>Phone: +91 7488455933</li>
+                <li>Location: Binodpur, Katihar, Bihar - 854105</li>
+            </ul>
+    </main>
+</body>
+
+</html>
