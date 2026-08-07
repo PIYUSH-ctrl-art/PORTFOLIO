@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT | PIYUSH DAS</title>
+    <style>
+    /* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:#ffffff;
+    min-height:100vh;
+    padding:50px 20px;
+}
+
+/* Common Card Style */
+
+#mini-projects,
+#Featured-Projects{
+    width:90%;
+    max-width:900px;
+    margin:35px auto;
+    padding:35px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+    transition:.4s ease;
+}
+
+#mini-projects:hover,
+#Featured-Projects:hover{
+    transform:translateY(-8px);
+    border-color:#00d4ff;
+    box-shadow:0 20px 50px rgba(0,212,255,.30);
+}
+
+/* Headings */
+
+#mini-projects h2,
+#Featured-Projects h2{
+    color:#00d4ff;
+    text-align:center;
+    font-size:34px;
+    margin-bottom:30px;
+    letter-spacing:2px;
+}
+
+#mini-projects h2::after,
+#Featured-Projects h2::after{
+    content:"";
+    display:block;
+    width:130px;
+    height:4px;
+    background:#00d4ff;
+    margin:12px auto 0;
+    border-radius:10px;
+}
+
+/* List */
+
+#mini-projects ul,
+#Featured-Projects ul{
+    list-style:none;
+}
+
+#mini-projects li,
+#Featured-Projects li{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:12px;
+    padding:18px 22px;
+    margin-bottom:18px;
+    font-size:18px;
+    transition:.35s ease;
+}
+
+#mini-projects li:hover,
+#Featured-Projects li:hover{
+    transform:translateX(10px);
+    border-color:#00d4ff;
+    background:rgba(0,212,255,.08);
+    box-shadow:0 10px 25px rgba(0,212,255,.20);
+}
+
+/* Links */
+
+a{
+    color:#00d4ff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+a:hover{
+    color:#ffffff;
+    text-decoration:underline;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    #mini-projects,
+    #Featured-Projects{
+        padding:25px;
+    }
+
+    #mini-projects h2,
+    #Featured-Projects h2{
+        font-size:28px;
+    }
+
+    #mini-projects li,
+    #Featured-Projects li{
+        font-size:16px;
+        padding:15px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    #mini-projects,
+    #Featured-Projects{
+        width:95%;
+        padding:20px;
+    }
+
+    #mini-projects h2,
+    #Featured-Projects h2{
+        font-size:24px;
+    }
+
+    #mini-projects li,
+    #Featured-Projects li{
+        font-size:15px;
+    }
+
+}
+    </style>
+   
+</head>
+
+<body>
+    <div id="mini-projects">
+        <h2>Mini Projects</h2>
+        <ul>
+            <li>Sign-Up Page : <a
+                    href="https://piyush-ctrl-art.github.io/Sign-Up-page-using-HTML-and-CSS-only./">https://piyush-ctrl-art.github.io/Sign-Up-page-using-HTML-and-CSS-only./</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div id="Featured-Projects">
+        <h2>Featured Projects</h2>
+        <ul>
+            <li>Project 1 : <a href="project1.html">Link</a></li>
+            <li>Project 2 : <a href="project2.html">Link</a></li>
+            <li>Project 3 : <a href="project3.html">Link</a></li>
+        </ul>
+    </div>
+
+    
+
+</body>
+
+</html>
