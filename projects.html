@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT | PIYUSH DAS</title>
+    <style>
+  /* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Page */
+
+body{
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+/* Main Projects Container */
+
+#mini-projects{
+    width: 90%;
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 40px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+
+    transition: 0.4s ease;
+}
+
+#mini-projects:hover{
+    border-color: #00d4ff;
+    box-shadow: 0 20px 50px rgba(0,212,255,0.25);
+}
+
+/* Main Heading */
+
+#mini-projects h2{
+    text-align: center;
+    color: #00d4ff;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+#mini-projects h2::after{
+    content: "";
+    display: block;
+
+    width: 140px;
+    height: 4px;
+
+    background: #00d4ff;
+    border-radius: 10px;
+
+    margin: 12px auto 0;
+}
+
+/* Project List */
+
+#mini-projects ol{
+    padding-left: 30px;
+}
+
+/* Project Card */
+
+#mini-projects li{
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 15px;
+
+    padding: 22px 25px;
+    margin-bottom: 25px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    transition: 0.35s ease;
+}
+
+/* Hover */
+
+#mini-projects li:hover{
+    transform: translateY(-6px);
+
+    background: rgba(0,212,255,0.08);
+
+    border-color: #00d4ff;
+
+    box-shadow:
+        0 10px 25px rgba(0,212,255,0.20),
+        0 0 15px rgba(0,212,255,0.08);
+}
+
+/* Description Heading */
+
+#mini-projects h4{
+    color: #00d4ff;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+/* Description */
+
+#mini-projects p{
+    color: #d1d5db;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Mobile */
+
+@media(max-width: 768px){
+
+    body{
+        padding: 30px 15px;
+    }
+
+    #mini-projects{
+        width: 95%;
+        padding: 25px;
+    }
+
+    #mini-projects h2{
+        font-size: 30px;
+    }
+
+    #mini-projects li{
+        padding: 18px;
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width: 480px){
+
+    #mini-projects{
+        padding: 20px;
+    }
+
+    #mini-projects h2{
+        font-size: 26px;
+    }
+
+    #mini-projects p{
+        font-size: 14px;
+    }
+
+}
+    </style>
+   
+</head>
+
+<body>
+
+    <div id="mini-projects">
+
+        <h2>Projects</h2>
+
+        <ol>
+
+            <li>
+                Sign-Up Page
+
+                <h4>Description:</h4>
+
+                <p>
+                    I have created a simple Sign-Up page using HTML and CSS only,
+                    and it was my first mini project.
+                </p>
+            </li>
+
+            <li>
+                Tic-Tac-Toe - Python/Tkinter
+
+                <h4>Description:</h4>
+
+                <p>
+                    A desktop GUI game built using Python and Tkinter.
+                </p>
+            </li>
+
+        </ol>
+
+    </div>
+
+</body>
