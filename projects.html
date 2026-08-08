@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROJECT | PIYUSH DAS</title>
     <style>
-    /* Google Font */
+   /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
@@ -16,6 +16,8 @@
     font-family:'Poppins',sans-serif;
 }
 
+/* Page */
+
 body{
     background:linear-gradient(135deg,#0f172a,#1e293b);
     color:#ffffff;
@@ -23,129 +25,172 @@ body{
     padding:50px 20px;
 }
 
-/* Common Card Style */
+/* Main Projects Container */
 
-#mini-projects,
-#Featured-Projects{
+#mini-projects{
     width:90%;
-    max-width:900px;
-    margin:35px auto;
-    padding:35px;
-    background:rgba(255,255,255,.08);
+    max-width:950px;
+    margin:40px auto;
+    padding:40px;
+
+    background:rgba(255,255,255,0.08);
     backdrop-filter:blur(12px);
-    border:1px solid rgba(255,255,255,.15);
+
+    border:1px solid rgba(255,255,255,0.15);
     border-radius:20px;
-    box-shadow:0 15px 40px rgba(0,0,0,.35);
-    transition:.4s ease;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.35);
+
+    transition:0.4s ease;
 }
 
-#mini-projects:hover,
-#Featured-Projects:hover{
-    transform:translateY(-8px);
+#mini-projects:hover{
+    transform:translateY(-6px);
     border-color:#00d4ff;
-    box-shadow:0 20px 50px rgba(0,212,255,.30);
+    box-shadow:0 20px 50px rgba(0,212,255,0.25);
 }
 
-/* Headings */
+/* Main Heading */
 
-#mini-projects h2,
-#Featured-Projects h2{
-    color:#00d4ff;
+#mini-projects h2{
     text-align:center;
-    font-size:34px;
-    margin-bottom:30px;
+    color:#00d4ff;
+    font-size:36px;
     letter-spacing:2px;
+    margin-bottom:35px;
 }
 
-#mini-projects h2::after,
-#Featured-Projects h2::after{
+#mini-projects h2::after{
     content:"";
     display:block;
-    width:130px;
+
+    width:140px;
     height:4px;
+
     background:#00d4ff;
-    margin:12px auto 0;
     border-radius:10px;
+
+    margin:12px auto 0;
 }
 
-/* List */
+/* Remove Default List Styling */
 
-#mini-projects ul,
-#Featured-Projects ul{
+#mini-projects ul{
     list-style:none;
+    padding:0;
+    margin:0;
 }
 
-#mini-projects li,
-#Featured-Projects li{
-    background:rgba(255,255,255,.05);
-    border:1px solid rgba(255,255,255,.10);
-    border-radius:12px;
-    padding:18px 22px;
-    margin-bottom:18px;
-    font-size:18px;
-    transition:.35s ease;
+/* Each Project Card */
+
+#mini-projects li{
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:15px;
+
+    padding:25px;
+    margin-bottom:22px;
+
+    transition:0.35s ease;
 }
 
-#mini-projects li:hover,
-#Featured-Projects li:hover{
-    transform:translateX(10px);
+/* Project Hover */
+
+#mini-projects li:hover{
+    transform:translateX(8px);
+
+    background:rgba(0,212,255,0.08);
+
     border-color:#00d4ff;
-    background:rgba(0,212,255,.08);
-    box-shadow:0 10px 25px rgba(0,212,255,.20);
+
+    box-shadow:
+        0 10px 25px rgba(0,212,255,0.20),
+        0 0 15px rgba(0,212,255,0.08);
 }
 
-/* Links */
+/* Project Name / Link */
 
-a{
+#mini-projects li a{
     color:#00d4ff;
     text-decoration:none;
+
+    font-size:18px;
     font-weight:600;
-    transition:.3s;
+
+    transition:0.3s;
 }
 
-a:hover{
+#mini-projects li a:hover{
     color:#ffffff;
-    text-decoration:underline;
+
+    text-shadow:
+        0 0 8px #00d4ff,
+        0 0 15px rgba(0,212,255,0.5);
+}
+
+/* Description Heading */
+
+#mini-projects h4{
+    color:#00d4ff;
+
+    font-size:16px;
+    margin-top:18px;
+    margin-bottom:5px;
+
+    letter-spacing:1px;
+}
+
+/* Description */
+
+#mini-projects p{
+    color:#d1d5db;
+
+    font-size:15px;
+    line-height:1.7;
+
+    margin-bottom:5px;
 }
 
 /* Responsive */
 
 @media(max-width:768px){
 
-    #mini-projects,
-    #Featured-Projects{
+    body{
+        padding:30px 15px;
+    }
+
+    #mini-projects{
+        width:95%;
         padding:25px;
     }
 
-    #mini-projects h2,
-    #Featured-Projects h2{
-        font-size:28px;
+    #mini-projects h2{
+        font-size:30px;
     }
 
-    #mini-projects li,
-    #Featured-Projects li{
-        font-size:16px;
-        padding:15px;
+    #mini-projects li{
+        padding:20px;
     }
 
 }
 
 @media(max-width:480px){
 
-    #mini-projects,
-    #Featured-Projects{
-        width:95%;
+    #mini-projects{
         padding:20px;
     }
 
-    #mini-projects h2,
-    #Featured-Projects h2{
-        font-size:24px;
+    #mini-projects h2{
+        font-size:25px;
     }
 
-    #mini-projects li,
-    #Featured-Projects li{
-        font-size:15px;
+    #mini-projects li{
+        padding:17px;
+    }
+
+    #mini-projects p{
+        font-size:14px;
     }
 
 }
@@ -161,7 +206,8 @@ a:hover{
                     href="https://piyush-ctrl-art.github.io/Sign-Up-page-using-HTML-and-CSS-only./">https://piyush-ctrl-art.github.io/Sign-Up-page-using-HTML-and-CSS-only./</a>
             </li>
             <h4>Description :</h4> <p>I have created a simple Sign-Up page using Html and Css only and It was my first Mini project</p>
-            
+            <li>Tic-Tac-Toe - Python/Tkinter </li>
+            <h4>Description : </h4> <p>A desktop GUI game built using Python and Tkinter.</p>
         </ul>
     </div>
 
