@@ -12,9 +12,7 @@
 body {
     font-family: "Poppins", sans-serif;
         background: linear-gradient(to top right, #000000, #110b36);
-
-
-    /* background: linear-gradient(135deg, #10002b, #240046); */
+    
     color: #fffdfd;
     display: flex;
     text-align: center;
@@ -70,10 +68,10 @@ a {
     font-weight: 600;
 
     color: #fff9f9;
-    background: #374764;
+    background: #222258;
     /* Persian Blue */
 
-    border: 3px solid #5a189a;
+    border: 1px solid #00d4ff;
     border-radius: 12px;
 
     transition: all 0.3s ease;
@@ -85,7 +83,7 @@ a:hover {
     color: #f1f0f3;
 
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(26, 26, 186, 0.457);
+    box-shadow: 0 10px 25px rgba(0, 212, 255, .25);
 }
 
 /* Click Effect */
